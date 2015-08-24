@@ -1,0 +1,18 @@
+/*********************************************************
+
+rb-item_billboard
+----------------------------------------------------------
+
+**********************************************************/
+.rb-item_billboard {
+
+
+	@if function-exists(rbToJSON) {
+		$item_billboardJSCFG: (
+			watchCSS: false
+		);
+
+		@include exportToJS($item_billboardJSCFG);
+	}
+}
+

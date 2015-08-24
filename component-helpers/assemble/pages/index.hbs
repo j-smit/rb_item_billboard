@@ -1,0 +1,15 @@
+---
+title: Index – Project-Overview
+layout: default_tpl.hbs
+---
+
+
+
+{{#with rb_item_billboard}}
+	{{> rb_item_billboard}}
+{{/with}}
+
+{{#mergeJSON rb_item_billboard 'hello: "custom content for item_billboard"'}}
+	{{> rb_item_billboard}}
+{{/mergeJSON}}
+
